@@ -1,5 +1,16 @@
 # 🛡️ SafeRideAI – Smart Helmet & Accident Detection
 
+
+## 📌 Problem Statement
+Build an AI-powered system capable of detecting **helmet violations** and **road accidents** from images and videos.  
+The system should:  
+- Store detection results (with metadata) in the cloud  
+- Allow intelligent querying through an **Agent-based RAG chatbot**  
+- Send **real-time alerts for accidents via Telegram bot**  
+- Generate **periodic reports** that can be emailed to stakeholders  
+
+## 📖 Project Overview
+
 SafeRideAI is an AI-powered platform for real-time **helmet violation** and **accident detection**, fully integrated with:
 
 * 🚦 **YOLOv8-based object detection**
