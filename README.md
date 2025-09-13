@@ -41,12 +41,12 @@ SafeRideAI/
 
 ## ⚡ Features
 
-✅ Real-time detection (Helmet / Accident) with YOLO
-✅ AWS S3 storage for captured images
-✅ Postgres (AWS RDS) for structured detection logs
-✅ RAG-based chatbot (FAISS + Groq LLM) to query detections
-✅ Automated email reports with attachments
-✅ Streamlit dashboard with 3 main sections
+*✅ Real-time detection (Helmet / Accident) with YOLO
+*✅ AWS S3 storage for captured images
+*✅ Postgres (AWS RDS) for structured detection logs
+*✅ RAG-based chatbot (FAISS + Groq LLM) to query detections
+*✅ Automated email reports with attachments
+*✅ Streamlit dashboard with 3 main sections
 
 ---
 
