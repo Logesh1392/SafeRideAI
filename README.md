@@ -26,15 +26,25 @@ SafeRideAI is an AI-powered platform for real-time **helmet violation** and **ac
 
 ```
 SafeRideAI/
-├── app.py                 # Main dashboard (Detection, Chatbot, Reports tabs)
-├── detection.py           # YOLO detection module + DB + S3
-├── chatbot_ui.py          # Chatbot module with FAISS + LLM
-├── mailreports_ui.py      # Reports UI module (email reports)
-├── db_utils.py            # Database utility functions
-├── models/                # Trained models
-│   └── bestmodel.pt       # YOLO trained model (helmet/accident)
+├── app.py                 # Main Streamlit dashboard (Detection, Chatbot, Reports tabs)
+│
+├── detection.py           # YOLOv8 detection + push to DB + upload to S3
+│
+├── chatbot_ui.py          # Chatbot UI (FAISS + LLM query interface)
+├── chat_report.py         # Chatbot-driven report generation settings
+│
+├── mailreports_ui.py      # Email reports UI (recipient, subject, body, etc.)
+├── report_generate.py     # Core logic for PDF/Excel/other report generation
+├── reports_ui.py          # Reports dashboard (integrates with mail + report_generate)
+│
+├── db_utils.py            # Database utilities (connect, fetch, insert, query helpers)
+│
+├── models/                # Trained ML/DL models
+│   └── bestmodel.pt       # YOLO trained model for helmet & accident detection
+│
 ├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
+└── README.md              # Project documentation (setup, run instructions)
+
 ```
 
 ---
